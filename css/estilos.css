@@ -155,6 +155,10 @@ body{
             font-weight: 400;
             margin-bottom: 1rem;
         }
+        .botonesInicio {
+            display: flex;
+            flex-direction: row;
+        }
         .botonRegistrarse{
             background-color:#9f3647;
             color: #ffffff;
@@ -163,6 +167,7 @@ body{
             font-size: 1.2rem;
             font-weight: 700;
             text-decoration: none;
+            margin-right: 20px;
              /* Agregar efecto de botón presionado */
              transition: transform 0.3s, box-shadow 0.3s;
              &:hover {
@@ -170,6 +175,10 @@ body{
                  transform: scale(0.95);
                  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
              }
+        }
+        .link-sin-estilos {
+            text-decoration: none;
+            color: inherit;
         }
     }
     .buscadorPrincipal{
