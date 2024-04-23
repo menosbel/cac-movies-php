@@ -491,11 +491,13 @@ body{
 }
 
 .carouselTrailers {
-    width: 50%;
+    width: 70%;
     height: auto;
 }
 
-
+iframe {
+    width: 100%;
+}
 
 /*ESTILOS ESCRITORIO FOOTER*/
 .footer{
