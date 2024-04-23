@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
 }
+
 @keyframes tilt-n-move-shaking {
     0% { transform: translate(0, 0) rotate(0deg); }
     25% { transform: translate(5px, 5px) rotate(5deg); }
@@ -15,24 +16,24 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: rgb(23, 23, 23);
 }
-   
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #9f3647;
 }
-  
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background:#9f3647;
 }
 body{
     background-color: #181419;
-    color:white; 
+    color:white;
      /* scrollbar-color: #9f3647  #181419; /*nuevo
      scrollbar-width: thin;*/
 }
@@ -85,7 +86,7 @@ body{
                 .linkNav.iniciarSesion{
                     background-color: #181419;
                     color: white;
-                    
+
                     border-radius: 5px;
                      /* Agregar efecto de botón presionado */
                      transition: transform 0.3s, box-shadow 0.3s;
@@ -96,10 +97,10 @@ body{
                      }
                 }
             }
-           
+
         }
     }
-   
+
 }
 /*ESTILOS PARA HEADER MOBILE Y TABLET*/
 
@@ -116,7 +117,7 @@ body{
                 font-weight:700;
             }
             .listaNav{
-               
+
                 padding:initial;
                 .listaItem{
                     .linkNav{
@@ -124,9 +125,9 @@ body{
                         margin-right: initial;
                         font-size: 1rem;
                         padding: 0.2rem;
-                        
+
                     }
-                  
+
                 }
             }
         }
@@ -189,7 +190,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        
+
         .tituloSection{
             font-size: 2.5rem;
             font-weight: 700;
@@ -232,7 +233,7 @@ body{
                  }
             }
         }
-       
+
     }
     .peliculasTendencia{
         width:80%;
@@ -259,14 +260,14 @@ body{
                     overflow: hidden;
                     border-radius: 10px;
                     transition: all 0.5s ease;
-                   
+
                     .imgTendencia{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         border-radius: 10px;
                     }
-                  
+
                     .tituloPelicula{
                         z-index: 2;
                         position: absolute;
@@ -283,17 +284,17 @@ body{
                             margin-bottom: 0.5rem;
                             letter-spacing: 0.1rem;
                             transition: opacity 0.5s ease-in-out;
-    
+
                         }
                     }
                     &:hover{
                        box-shadow: 0 0 30px #9f3648cd;
                        transform: scale(1.1);
-                      
+
                     }
                     &:hover h4 {
                         opacity: 1;
-                      
+
                     }
                     &:hover::before {
                         content: '';
@@ -308,7 +309,7 @@ body{
                     }
                 }
             }
-          
+
         }
         .boton{
             border: 1px solid white;
@@ -362,20 +363,20 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-               
+
                 .imgAclamada{
                     border-radius: 5%;
                     width: 95%;
                     height: 95%;
                     object-fit: cover;
                 }
-                
+
             }
-           
-        
+
+
         }
     }
-   
+
 }
 
 @media (max-width: 768px) {
@@ -420,27 +421,27 @@ body{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-              
+
                 a{
                     width: 100%;
                     .pelicula{
                         width: 100%;
                         height: 500px;
-                       
+
                         .tituloPelicula{
                             h4 {
                                 font-size: 1rem;
                             }
                         }
-                       
+
                     }
                 }
                 &:hover{
                     box-shadow:initial;
                     transform: scale(0.9);
-                   
+
                 }
-               
+
             }
             .boton{
                 padding: 0.8rem 0.8rem;
@@ -466,6 +467,35 @@ body{
         }
     }
 }
+
+.trailers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px
+}
+
+.tituloTrailers {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.rowTrailers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 800px;
+}
+
+.carouselTrailers {
+    width: 50%;
+    height: auto;
+}
+
+
 
 /*ESTILOS ESCRITORIO FOOTER*/
 .footer{
@@ -511,10 +541,10 @@ body{
         padding-bottom: 20px;
         .listaNav{
             flex-direction: column;
-           
+
             row-gap: 15px;
             .listaItem{
-                
+
                 .linkNav{
                     font-size: 1rem;
                 }
@@ -604,7 +634,7 @@ body{
                     border-radius: 5px;
                     font-size: 1rem;
                     font-weight: 500;
-                   
+
                 }
                 .ayuda{
                     margin-top:40px;
@@ -612,12 +642,12 @@ body{
                     text-decoration: none;
                     color: #787878;
                     font-weight:400;
-                   
+
                 }
             }
-           
+
         }
-   
+
     }
 }
 
@@ -640,7 +670,7 @@ body{
                form{
                 width: 100%;
                 text-align: center;
-               
+
                 input:not(.check,.boton),select{
                     width: 80%;
                     height: 35px;
@@ -663,7 +693,7 @@ body{
                     font-size: 0.8rem;
                 }
                }
-               
+
             }
         }
     }
@@ -672,7 +702,7 @@ body{
 
 /*ESTILOS ESCRITORIO Detalle Mario*/
 .mainDetalle{
-    
+
     .detalle{
         padding-top:50px;
         background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("../assets/img/mario-bg.jpg");
@@ -704,9 +734,9 @@ body{
                 }
             }
         }
-        
-        
-       
+
+
+
     }
     .trailer{
         padding-top:150px;
@@ -732,7 +762,7 @@ body{
                             margin-right: 50px;
                         }
                     }
-                  
+
                 }
             }
             .info{
@@ -790,7 +820,7 @@ body{
                 iframe{
                     width: 100%;
                     height: 300px;
-                
+
                 }
             }
             .contenedorInfo{
@@ -801,7 +831,7 @@ body{
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
-                       
+
                         li{
                             a{
                                 font-size: 2rem;
