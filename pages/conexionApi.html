@@ -20,27 +20,17 @@
     </header>
     <main  id="main" class="main">
       <section  data-aos="zoom-in"  data-aos-duration="1000" class="seccionRegistrarse">
-        <form  action="" method="post" id="formularioInicioSesion">
-            <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+        <form  action="" method="post" id="formularioPedidoApi">
+            <h2 class="tituloApi">Creá un usuario random</h2>
          
             <div>
-                <input type="email" placeholder="Email" required id="email" name="email">
-                <span id="emailError" class="error" ></span>
-
+                <h3>Nombre: <span class="datosApi" id="nombre"></span></h3>
             </div>
             <div>
-                <input type="password" placeholder="Contraseña" required id="password" name="password">
-                <span id="passwordError" class="error" ></span>
+                <h3>Apellido: <span class="datosApi" id="apellido"></span></h3>
             </div>
-          
-          
             <div>
-                <input  class="boton" type="submit" value="Iniciar Sesión">
-            </div>
-           
-            <div > 
-               
-                <a id="ayuda" class="ayuda" href="registrarse.html">Registrarse</a>
+                <input id="obtenerUsuarioBtn" class="boton botonApi" type="submit" value="Buscar">
             </div>
         </form>
       </section>
@@ -50,6 +40,6 @@
     <script>
     AOS.init();
     </script>
-    <script src="../js/inicioSesion.js"></script>
+    <script src="../js/conexionApi.js"></script>
 </body>
 </html>

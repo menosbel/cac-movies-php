@@ -862,3 +862,19 @@ hr{
     margin: 0 auto;
     margin-top: 40px;
 }
+
+.tituloApi{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.botonApi {
+    margin-top: 30px;
+}
+
+.datosApi {
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
