@@ -42,7 +42,7 @@ body{
 .header{
     background-color:#9f3647;
     color:#ffffff;
-    height: 10vh;
+    height: 100px;
     position:sticky;
     top: 0;
     z-index:10;
@@ -877,4 +877,13 @@ hr{
     margin-left: 20px;
     font-weight: 300;
     font-size: 1.5rem;
+}
+
+.navegacionCrud {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.sectionFormulario {
+    padding: 30px;
 }

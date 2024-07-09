@@ -1,0 +1,24 @@
+# drop table peliculas.peliculas ;
+
+create table peliculas (
+id int auto_increment primary key,
+titulo varchar (100),
+fecha_lanzamiento date,
+genero varchar(50),
+duracion varchar(20),
+director varchar(50),
+reparto varchar(100),
+sinopsis varchar(200)
+);
+
+
+
+insert into peliculas (titulo, fecha_lanzamiento, genero, duracion, director, reparto, sinopsis)
+values ('Instensamente 2', '2024-07-03', 'Animada', '120 min', 'John Doe', 'Jane Doe', 'Las emociones de una niña que juega hockey'),
+('Toy Story', '1990-05-23', 'Animada', '120 min', 'Spielberg', 'Andy', 'Juguetes que hablan'),
+('El diario de la princesa', '2022-11-03', 'Comedia', '90 min', 'Juliana Cota', 'Maria Barrios', 'Una chica se vuelve realeza'),
+('Rapido y furioso', '2006-08-10', 'Accion', '180 min', 'Paul Raud', 'Mariana Jonas', 'Autos que van muy rapido y gente que se enoja'),
+('Eterno resplandor de una mente sin recuerdos', '1998-05-03', 'Drama', '90 min', 'John Doe', 'Jim Carrey', 'Turbulenta película que vale la pena ver');
+
+
+select * from peliculas p ;
